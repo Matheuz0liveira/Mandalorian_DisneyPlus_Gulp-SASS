@@ -1,0 +1,27 @@
+@use 'variaveis';
+
+.saber-mais {
+    padding: 3vw 0 0 0;
+    //margin-top: 2vw;
+    margin-bottom: 2vw;
+    text-align: center;
+    
+    @media (max-width: 768px) {
+        padding: 7vw 0 3vw 0;
+    }
+    &__button {
+        align-items: center;
+        justify-content: center;
+        height: 48px;
+        min-width: 200px;
+        font-size: 1rem;
+        font-weight: 700;
+        color: #1d1e1f;
+        background-color: #fff;
+        border-radius: 23px;
+        text-decoration: none;
+        padding: 8px 14px;
+        //letter-spacing: 1px;
+        border: 1px solid #fff;
+    }
+}

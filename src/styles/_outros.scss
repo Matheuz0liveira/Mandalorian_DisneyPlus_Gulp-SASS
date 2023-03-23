@@ -1,0 +1,107 @@
+@use 'variaveis';
+
+.outros {
+        padding:  2vw 5.6vw 5.6vw 5.6vw;
+
+
+        .container {
+                max-width: 100%;
+                overflow-x: hidden;
+
+                h2 {
+                        margin-bottom: 7vw;
+                }
+        }
+
+        &__title {
+                text-align: center;
+                //margin-bottom: 50px;
+                color: variaveis.$corTextoSecundario;
+                
+        }
+
+        &__list {
+                display: flex;
+                flex-wrap: wrap;
+                //gap: 10px;
+                list-style: none;
+                padding: 0;
+
+                &__item {
+                        flex-basis: 20%;
+                        flex-grow: 1;
+                        text-align: center;
+                        padding-bottom: 3vh;
+
+                        @media (max-width: 768px) {
+                                flex-basis: 10%;
+                                
+                        }
+
+                        img {
+                                min-width: 290px;
+                                max-width: 400px;
+                                width: 150px;
+                                //height: 90%;
+                                border-radius: 5px;
+                                transition: transform 0.2s ease;
+
+                                @media (max-width: 768px) {
+                                        min-width: 30px;
+                                        width: 140px;
+                                        
+
+                                }
+
+                                &:hover {
+                                        transform:scale(1.02);
+                                }
+                                
+                        }
+
+                }
+        }
+}
+
+//@use 'variaveis';
+
+//.outros {
+//        padding: 10vw 10vw 7.6vw 10vw;
+
+//        .container {
+//                max-width: 100%;
+//                overflow-x: hidden;
+//        }
+//
+//        &__title {
+//                text-align: center;
+ //               margin-bottom: 60px;
+//                color: variaveis.$corTextoSecundario;
+//        }
+//
+//        &__list {
+//                display: grid;
+//                grid-template-columns: repeat(5, 1fr);
+ //               gap: 10px;
+ //               list-style: none;
+//
+ //               &__item {
+ //                       //max-width: 408px;
+ //                       
+
+ //                       img {
+  //                              max-width: 408px;
+ //                               width: 90%;
+  //                             height: 90%;
+  //                              border-radius: 5px;
+  //                              transition: transform 0.2s ease;
+
+  //                              &:hover {
+  //                                      transform:scale(1.02);
+    //                            }
+   //                             
+     //                   }
+//
+  //              }
+    //    }
+//}
